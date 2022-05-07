@@ -5,6 +5,10 @@ import Home from './pages/Home/Home/Home';
 import Footer from './pages/Shared/Footer/Footer';
 import Login from './pages/Login/Login/Login';
 import SignUp from './pages/Login/SignUp/SignUp';
+import ProductDetails from './pages/ProductDetails/ProductDetails';
+import RequireAuth from './pages/Login/RequireAuth/RequireAuth';
+import NotFound from './pages/Shared/NotFound/NotFound';
+import Blogs from './pages/Blogs/Blogs';
 
 function App() {
   return (
@@ -13,8 +17,16 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>} ></Route>
         <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='/productupdate/:productId' element={
+          <RequireAuth>
+            <ProductDetails></ProductDetails>
+          </RequireAuth>
+
+        }></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>

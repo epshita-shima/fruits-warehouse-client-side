@@ -2,72 +2,108 @@
     {
         "id": 1,
         "name": "Cherry",
+        "supplier": "Shoma Aktar",
         "price": 120,
-        "img": "https://img.freepik.com/free-photo/fresh-guava-fruit-with-leaf-isolated_147493-1301.jpg"
+        "img": "https://img.freepik.com/free-photo/fresh-guava-fruit-with-leaf-isolated_147493-1301.jpg",
+        "description": "A cherry is a fruit that grows on a tree or a bush. It belongs to the genus Prunus. It is red in color, with a seed in the middle.",
+        "quantity": 4
     },
     {
         "id": 2,
         "name": "Tomato",
+        "supplier": "Malika Khatun",
         "price": 150,
+        "quantity": 3,
+        "description": "omatoes are rich in lycopene, an antioxidant that is good for the heart and effective against certain cancers.",
         "img": "https://img.freepik.com/free-photo/tomatoes_144627-15411.jpg"
     },
     {
         "id": 3,
         "name": "Mango",
+        "supplier": "Humaira Khatun",
         "price": 160,
+        "quantity": 5,
+        "description": "Mangos are also rich in vitamin C, which is important for forming blood vessels and healthy collagen, as well as helping you heal",
         "img": "https://img.freepik.com/free-photo/delicious-mango-with-white-background_1205-3850.jpg"
     },
     {
         "id": 4,
         "name": "Rep Mango",
+        "supplier": "Harun",
         "price": 180,
+        "quantity": 5,
+        "description": "Mangos are also rich in vitamin C, which is important for forming blood vessels and healthy collagen, as well as helping you heal",
         "img": "https://as2.ftcdn.net/v2/jpg/02/14/30/43/1000_F_214304332_IcxCpPJtslqgGA37MyPqXmTXI5I1aCxj.jpg"
     },
     {
         "id": 5,
         "name": "Rambutan",
+        "supplier": "Kamal Uddin",
         "price": 200,
+        "quantity": 2,
+        "description": "Rambutans are also full of potassium, a mineral that helps your heart beat, kidneys function, and muscles contract.",
         "img": "https://as1.ftcdn.net/v2/jpg/00/99/22/30/1000_F_99223044_ixMvkn2H9z5Uw4rz7xQONo82CPv5lzjJ.jpg"
     },
     {
         "id": 6,
         "name": "Green Apple",
+        "supplier": "Jamal Uddin",
+        "description": "Green apples are rich in Vitamin C, Vitamin A, antioxidants, and phytonutrients, which make them a great food for improved vision.",
+        "quantity": 2,
         "price": 250,
         "img": "https://img.freepik.com/free-photo/green-apple-with-leaves_1101-453.jpg"
     },
     {
         "id": 7,
         "name": "Grapes",
+        "supplier": "Salam Uddin",
+        "description": "rapes are a good source of potassium, a mineral that helps balance fluids in your body",
+        "quantity": 4,
         "price": 220,
         "img": "https://img.freepik.com/free-photo/red-grape-isolated-white_1232-1955.jpg"
     },
     {
         "id": 8,
         "name": "Capsicum",
+        "supplier name": "Dalam Uddin",
+        "description": "Because they are not fully mature, they have a bitter after taste, and half the vitamin C and 1/10th the vitamin A compared to their red or orange siblings",
+        "quantity": 1,
         "price": 300,
         "img": "https://as2.ftcdn.net/v2/jpg/02/82/83/53/1000_F_282835316_FJxC39WvqrQq5vrGDsphwe6QXbclk3Pq.jpg"
     },
     {
         "id": 9,
         "name": "Orange",
+        "supplier": "Mouni Roy",
+        "description": "Oranges are rich in antioxidants that work to eliminate free radicals, keeping skin healthy and free of cancer.",
+        "quantity": 6,
         "price": 350,
         "img": "https://img.freepik.com/free-photo/cut-orange-parts-whole-fruit-with-green-leaves_74855-5381.jpg"
     },
     {
         "id": 10,
         "name": "Lemon",
+        "supplier": "Mouni Aktar",
+        "description": "Lemons are high in vitamin C, fiber, and various beneficial plant compounds. These nutrients are responsible for several health benefits.",
+        "quantity": 3,
         "price": 40,
         "img": "https://img.freepik.com/free-photo/lemon_1205-1667.jpg"
     },
     {
         "id": 11,
         "name": "Strawberry",
+        "supplier": "Sukhi Aktar",
+        "description": "These potent little packages protect your heart, increase HDL (good) cholesterol, lower your blood pressure, and guard against cancer.",
+        "quantity": 3,
         "price": 400,
         "img": "https://img.freepik.com/free-photo/ripe-strawberries-with-leaves-isolated-white_80510-607.jpg"
     },
     {
         "id": 12,
         "name": "Banana",
+        "supplier": "Sokhina Aktar",
+        "description": "Bananas are a tasty and convenient source of some important nutrients. People have grown this tropical fruit since ancient times, and its health benefits have been promoted for more than a century. ",
+        "quantity": 7,
         "price": 120,
         "img": "https://img.freepik.com/free-photo/banana-white-background_88281-24.jpg"
     }

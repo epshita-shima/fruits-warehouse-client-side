@@ -1,0 +1,14 @@
+.inventory-product {
+    border: 1px solid lightgray;
+    height: 600px;
+    width: 500px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.img-product {
+    height: 150px;
+    width: 200px;
+}

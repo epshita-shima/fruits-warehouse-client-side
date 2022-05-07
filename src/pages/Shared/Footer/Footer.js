@@ -5,8 +5,8 @@ const Footer = () => {
     const today = new Date();
     const year = today.getFullYear()
     return (
-        <div>
-            <div className='footer-bg p-5 text-white' >
+        <div className='footer'>
+            <div className='footer-bg p-5 text-white ' >
                 <div className="row">
                     <div className="col-md-3">
                         <img className='img-fluid w-50 mb-3' src="https://cdn.shopify.com/s/files/1/0309/2968/2571/files/Obrien-Logo_125x@2x.png?v=1595923730" alt="" />
