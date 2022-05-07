@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Cherry",
+        "price": 120,
+        "img": "https://img.freepik.com/free-photo/fresh-guava-fruit-with-leaf-isolated_147493-1301.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Tomato",
+        "price": 150,
+        "img": "https://img.freepik.com/free-photo/tomatoes_144627-15411.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Mango",
+        "price": 160,
+        "img": "https://img.freepik.com/free-photo/delicious-mango-with-white-background_1205-3850.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Rep Mango",
+        "price": 180,
+        "img": "https://as2.ftcdn.net/v2/jpg/02/14/30/43/1000_F_214304332_IcxCpPJtslqgGA37MyPqXmTXI5I1aCxj.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Rambutan",
+        "price": 200,
+        "img": "https://as1.ftcdn.net/v2/jpg/00/99/22/30/1000_F_99223044_ixMvkn2H9z5Uw4rz7xQONo82CPv5lzjJ.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Green Apple",
+        "price": 250,
+        "img": "https://img.freepik.com/free-photo/green-apple-with-leaves_1101-453.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Grapes",
+        "price": 220,
+        "img": "https://img.freepik.com/free-photo/red-grape-isolated-white_1232-1955.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Capsicum",
+        "price": 300,
+        "img": "https://as2.ftcdn.net/v2/jpg/02/82/83/53/1000_F_282835316_FJxC39WvqrQq5vrGDsphwe6QXbclk3Pq.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Orange",
+        "price": 350,
+        "img": "https://img.freepik.com/free-photo/cut-orange-parts-whole-fruit-with-green-leaves_74855-5381.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Lemon",
+        "price": 40,
+        "img": "https://img.freepik.com/free-photo/lemon_1205-1667.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Strawberry",
+        "price": 400,
+        "img": "https://img.freepik.com/free-photo/ripe-strawberries-with-leaves-isolated-white_80510-607.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Banana",
+        "price": 120,
+        "img": "https://img.freepik.com/free-photo/banana-white-background_88281-24.jpg"
+    }
+]

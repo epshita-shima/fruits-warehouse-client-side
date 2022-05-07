@@ -1,0 +1,14 @@
+.product-item {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.product-img {
+    margin-top: 5px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+}
