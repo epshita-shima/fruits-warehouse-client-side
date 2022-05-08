@@ -1,12 +1,11 @@
-
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import ManageInventoryDetail from './ManageInventoryDetail/ManageInventoryDetail';
 import './ProductDetails.css';
 
 
 const ProductDetails = () => {
     const { productId } = useParams();
-
     const [product, setProduct] = useState({});
 
     useEffect(() => {
@@ -16,29 +15,73 @@ const ProductDetails = () => {
             .then(res => res.json())
             .then(data => setProduct(data));
 
-    }, [])
+    }, []);
+
     const handleReduceQuantity = () => {
         const url = `http://localhost:5000/productItem/${productId}`;
 
         if (product.quantity > 0) {
             product.quantity = product.quantity - 1;
             setProduct({ ...product });
+
         }
         else {
             alert('add product');
         }
+        const quantites = product.quantity;
+        console.log(quantites);
         //update Quantity
 
-        fetch('url', {
+        fetch(url, {
             method: 'PUT',
-            headers: {
-                'content-type': 'application-type'
-            },
-            body: JSON.stringify(product)
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ quantites })
         })
             .then(res => res.json())
-            .then(data => console.log(data));
+            .then(data => {
+                product.quantity = quantites;
+                setProduct({ ...product })
+            })
     }
+
+    const handleProductQuantity = event => {
+        event.preventDefault();
+        const url = `http://localhost:5000/productItem/${productId}`;
+
+        const newQuantity = event.target.num.value;
+        if (newQuantity > 0) {
+            const quantites = +newQuantity + product.quantity;
+            console.log(quantites);
+
+            fetch(url, {
+                method: 'PUT',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ quantites })
+            })
+                .then(res => res.json())
+                .then(data => {
+                    product.quantity = quantites;
+                    setProduct({ ...product })
+                })
+        }
+        //     const quantityNumber = event.target.num.value;
+        //     const quantites = +quantityNumber + product.quantity;
+        //     // setProduct({ ...product });
+        //     // const quantites = product.quantity;
+        //     console.log(quantites);
+
+        //     fetch(url, {
+        //         method: 'PUT',
+        //         headers: {
+        //             'content-type': 'application-type'
+        //         },
+        //         body: JSON.stringify({ quantites })
+
+        //     })
+        //         .then(res => res.json())
+        //         .then(data => console.log(data));
+    };
+
 
     return (
         <div className='inventory-product'>
@@ -51,11 +94,14 @@ const ProductDetails = () => {
             <h5>Quantity: {product.quantity} </h5>
             <h5>Sold : {product.quantity === 0 && 'stock Out'}</h5>
 
-            <button onClick={handleReduceQuantity}>Deliverd</button>
+            <button className='btn btn-success' onClick={handleReduceQuantity}>Deliverd</button>
 
-
+            <form className='mt-5 mb-5' onSubmit={handleProductQuantity}>
+                <input type="number" name="num" placeholder='give product  quantity' id="" />
+                <input type="submit" value="Add Quantity" />
+            </form>
+            <Link to='/manageInventory'><button className='btn btn-info btn-lg'>Manage Inventory </button></Link>
         </div>
     );
 };
-
 export default ProductDetails;
