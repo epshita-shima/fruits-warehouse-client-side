@@ -1,8 +1,10 @@
+import { sendEmailVerification } from 'firebase/auth';
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import './SignUp.css';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const SignUp = () => {
     const [
@@ -30,7 +32,7 @@ const SignUp = () => {
     }
     return (
         <div className='register-form'>
-            <h2 style={{ textAlign: 'center' }} className="text-primary mt-3">Please Register</h2>
+            <h2 className="text-dark fw-bold text-center mt-3">Please Register</h2>
             <form onSubmit={handleRegister}>
                 <input type="text" name="name" id="" placeholder='Your Name' />
 
@@ -40,7 +42,7 @@ const SignUp = () => {
                 <input type="submit" value="Register" />
             </form>
             <p>Already have an account? <Link to="/login" className='text-danger pe-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link> </p>
-
+            <SocialLogin></SocialLogin>
         </div>
     );
 };
