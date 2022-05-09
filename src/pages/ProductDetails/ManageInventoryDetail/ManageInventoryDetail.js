@@ -11,7 +11,7 @@ const ManageInventoryDetail = ({ product }) => {
             const url = `http://localhost:5000/productItem/${id}`;
 
             fetch(url, {
-                method: 'DELETE'
+                method: 'DELETE',
             })
                 .then(res => res.json())
                 .then(data => {

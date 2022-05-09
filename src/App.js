@@ -11,6 +11,8 @@ import NotFound from './pages/Shared/NotFound/NotFound';
 import Blogs from './pages/Blogs/Blogs';
 import ManageInventory from './pages/ProductDetails/ManageInventory/ManageInventory';
 import AddItem from './pages/AddItem/AddItem';
+import MyItem from './pages/MyItem/MyItem';
+import About from './pages/About/About';
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
           <ManageInventory></ManageInventory>
         </RequireAuth>}></Route>
         <Route path='/additem' element={<AddItem></AddItem>}></Route>
+        <Route path='/myItem' element={<MyItem></MyItem>}></Route>
+        <Route path='/about' element={<About></About>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>

@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import ManageInventoryDetail from './ManageInventoryDetail/ManageInventoryDetail';
 import './ProductDetails.css';
 
 
@@ -64,22 +63,6 @@ const ProductDetails = () => {
                     setProduct({ ...product })
                 })
         }
-        //     const quantityNumber = event.target.num.value;
-        //     const quantites = +quantityNumber + product.quantity;
-        //     // setProduct({ ...product });
-        //     // const quantites = product.quantity;
-        //     console.log(quantites);
-
-        //     fetch(url, {
-        //         method: 'PUT',
-        //         headers: {
-        //             'content-type': 'application-type'
-        //         },
-        //         body: JSON.stringify({ quantites })
-
-        //     })
-        //         .then(res => res.json())
-        //         .then(data => console.log(data));
     };
 
 
@@ -100,7 +83,7 @@ const ProductDetails = () => {
                 <input type="number" name="num" placeholder='give product  quantity' id="" />
                 <input type="submit" value="Add Quantity" />
             </form>
-            <Link to='/manageInventory'><button className='btn btn-info btn-lg'>Manage Inventory </button></Link>
+
         </div>
     );
 };

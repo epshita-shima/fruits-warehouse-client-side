@@ -17,7 +17,7 @@ const ProductItem = ({ productItem }) => {
             <p>Price:{price}</p>
             <p>Quantity: {quantity}</p>
             <p>{description}</p>
-            <button onClick={() => navigateToServiceDetail(_id)} className='btn btn-primary rounded-pill'>Update {name}</button>
+            <button onClick={() => navigateToServiceDetail(_id)} className='btn btn-success btn-lg rounded-pill'>Update {name}</button>
         </div>
     );
 };
