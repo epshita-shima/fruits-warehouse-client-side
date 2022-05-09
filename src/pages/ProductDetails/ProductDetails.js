@@ -8,7 +8,7 @@ const ProductDetails = () => {
     const [product, setProduct] = useState({});
 
     useEffect(() => {
-        const url = `http://localhost:5000/productItem/${productId}`;
+        const url = `https://evening-river-08129.herokuapp.com/productItem/${productId}`;
 
         fetch(url)
             .then(res => res.json())
@@ -17,7 +17,7 @@ const ProductDetails = () => {
     }, []);
 
     const handleReduceQuantity = () => {
-        const url = `http://localhost:5000/productItem/${productId}`;
+        const url = `https://evening-river-08129.herokuapp.com/productItem/${productId}`;
 
         if (product.quantity > 0) {
             product.quantity = product.quantity - 1;
@@ -45,7 +45,7 @@ const ProductDetails = () => {
 
     const handleProductQuantity = event => {
         event.preventDefault();
-        const url = `http://localhost:5000/productItem/${productId}`;
+        const url = `https://evening-river-08129.herokuapp.com/productItem/${productId}`;
 
         const newQuantity = event.target.num.value;
         if (newQuantity > 0) {

@@ -7,7 +7,7 @@ const AddItem = () => {
     const onSubmit = data => {
         console.log(data);
         toast('data added successfully')
-        const url = 'http://localhost:5000/productItem';
+        const url = 'https://evening-river-08129.herokuapp.com/productItem';
         fetch(url, {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
