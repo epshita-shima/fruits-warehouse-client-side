@@ -1,6 +1,6 @@
 # Fruits Warehouse
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project link (https://fruits-warehouse-83911.web.app).
 StackOverflow question link (https://stackoverflow.com/questions/72166356/when-an-item-is-delete-from-dayabase-in-mongodb-how-to-show-deleted-item-in-item).
 
 ## Description
