@@ -1,7 +1,33 @@
 # Fruits Warehouse
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+StackOverflow question link (https://stackoverflow.com/questions/72166356/when-an-item-is-delete-from-dayabase-in-mongodb-how-to-show-deleted-item-in-item).
 
+## Description
+
+In this project have login authentication for user.\
+User signup the website with their valid email, or if user already have signup the website then can login.\
+User visit the website for knowing about fruits.
+
+## Technology Used
+
+### React Bootstrap
+
+### React firebase hooks
+
+### Bootstrap
+
+### React Tostify
+
+### Google firebase for authentication
+
+### React Router
+
+### Private Router checkout 
+
+### Mongodb database
+
+### express.js
 
 ## Available Scripts
 
