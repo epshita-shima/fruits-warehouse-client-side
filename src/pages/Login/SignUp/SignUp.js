@@ -31,7 +31,7 @@ const SignUp = () => {
         navigate('/home');
     }
     return (
-        <div className='register-form'>
+        <div className='register-form card px-5 mt-4 shadow-lg'>
             <h2 className="text-dark fw-bold text-center mt-3">Please Register</h2>
             <form onSubmit={handleRegister}>
                 <input type="text" name="name" id="" placeholder='Your Name' />
@@ -39,7 +39,7 @@ const SignUp = () => {
                 <input type="email" name="email" id="" placeholder='Email Address' required />
 
                 <input type="password" name="password" id="" placeholder='Password' required />
-                <input type="submit" value="Register" />
+                <input type="submit" className='btn-update' value="Register" />
             </form>
             <p>Already have an account? <Link to="/login" className='text-danger pe-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link> </p>
             <SocialLogin></SocialLogin>

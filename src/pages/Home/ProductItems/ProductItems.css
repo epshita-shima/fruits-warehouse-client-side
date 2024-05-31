@@ -2,12 +2,32 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
+    height: 50%;
+    width: 100%;
 }
 
 .product-title {
     text-align: center;
 }
 
+.btn-manage-inventory{
+    background-color: #F9AC00;
+    color:#fff;
+    border-radius: 5px;
+}
+.btn-manage-inventory:hover{
+    color:#fff;
+}
+.manage-inventory-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.manage-inventory-heading p{
+    color: chocolate;
+    font-size: 24px;
+    font-weight: bold;
+}
 @media only screen and (max-width:576px) {
     .product-container {
         grid-template-columns: repeat(1, 1fr);

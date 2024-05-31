@@ -7,7 +7,7 @@ const ProductItems = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('https://evening-river-08129.herokuapp.com/productItem')
+        fetch('http://localhost:5000/productItem')
             .then(res => res.json())
             .then(data => setProducts(data.slice(0, 6)));
     }, [])
@@ -23,7 +23,11 @@ const ProductItems = () => {
                 }
 
             </div>
-            <Link to='/manageInventory'><button className='btn btn-success btn-lg mt-5'>Manage Inventory </button></Link>
+            <div className='manage-inventory-heading mt-5'>
+               <p className='mt-2 '>Click here for manage inventory</p> 
+               <Link to='/manageInventory'><button className='btn btn-manage-inventory ms-4'>Manage Inventory </button></Link>
+            </div>
+           
         </div>
     );
 };

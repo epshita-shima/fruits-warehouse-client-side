@@ -21,7 +21,7 @@ const LatestBlog = () => {
                     </div>
                 </div>
                 <div className="col-md-4  text-start p-2">
-                    <img className='img-fluid mb-2' src="https://cdn.shopify.com/s/files/1/0309/2968/2571/articles/toner-906142_1280_5a4b82cd-6cc2-4c96-9b1a-96f91343ba18.jpg?v=1578990917" alt="" />
+                    <img className='img-fluid mb-2' src="https://cdn.shopify.com/s/files/1/0309/2968/2571/articles/yogurt-1442034_1280_e398f226-c1bb-409e-a62c-c4bc394d9bc6.jpg?v=1578990937"  alt="" />
                     <div>
                         <h5 className='fw-bold'>Yogurt contains some of nearly every nutrient that your body needs</h5>
                         <p>Yogurts can be high in protein, calcium, vitamins, and live culture, or probiotics, which can enhance the gut microbiota. These can offer protection for bones and teeth and help prevent digestive problems.</p>

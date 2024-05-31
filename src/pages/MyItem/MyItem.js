@@ -7,20 +7,21 @@ import Item from '../Item/Item';
 const MyItem = () => {
     const [myItems, setMyItem] = useState([]);
     const [user] = useAuthState(auth);
+console.log(user.email)
+    // useEffect(() => {
+    //     const getMyItem = async () => {
+    //         const email = user?.email;
+    //         const url = `http://localhost:5000/myItem?email=${email}`;
+    //         const { data } = await axios.get(url, {
+    //             headers: {
+    //                 authorization: `Bearer ${localStorage.getItem('accessToken')}`
+    //             }
+    //         });
+    //         setMyItem(data);
+    //     }
+    //     getMyItem();
+    // }, [user]);
 
-    useEffect(() => {
-        const getMyItem = async () => {
-            const email = user?.email;
-            const url = `https://evening-river-08129.herokuapp.com/myItem?email=${email}`;
-            const { data } = await axios.get(url, {
-                headers: {
-                    authorization: `Bearer ${localStorage.getItem('accessToken')}`
-                }
-            });
-            setMyItem(data);
-        }
-        getMyItem();
-    }, [user]);
     return (
         <div className='container'>
             <div className='item-container'>

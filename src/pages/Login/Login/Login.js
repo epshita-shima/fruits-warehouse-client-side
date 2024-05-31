@@ -29,7 +29,7 @@ const Login = () => {
         return <Loading></Loading>
     }
     if (error) {
-        errorElement = <p className='text-danger'>Error: {error?.message}</p>
+        errorElement = <p className='text-danger'>Error: Please give your valid gmail and password</p>
     }
 
     const handleSubmit = event => {
@@ -71,13 +71,15 @@ const Login = () => {
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
-                <Button className='w-50 d-block mx-auto mb-2' variant="primary" type="submit">
+                <Button className='w-50 d-block mx-auto mb-2 btn-update' type="submit">
                     Login
                 </Button>
             </Form>
             {errorElement}
-            <p>New to fruits warehouse? <Link to='/signup' className='text-danger pe-auto' onClick={navigateRegister}>Please Sign Up</Link></p>
-            <p>Forget Password? <button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
+            <p className='mt-3'>New to fruits warehouse? <Link to='/signup' className='text-danger pe-auto' onClick={navigateRegister}>Please Sign Up</Link></p>
+
+            <button className='btn btn-link pe-auto text-decoration-none' style={{ color: '#89B140' }} onClick={resetPassword}><span className='me-2 text-black'>Forgot password?</span>
+                Reset Password</button>
             <SocialLogin></SocialLogin>
             <ToastContainer />
         </div>
